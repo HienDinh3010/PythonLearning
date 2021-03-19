@@ -1,0 +1,33 @@
+import random
+
+def play_with_array():
+    fruits = ['mango', 'banana', 'apple', 'strawberry', 'tomato']
+    for fruit in fruits:
+        print(fruit)
+    # Select random fruit
+    random_num = random.randint(0, len(fruits))
+    print(f'You can eat {fruits[random_num]} now')
+
+def play_with_vietlotte():
+    vietlotte = []
+    while len(vietlotte) < 6:
+        num = random.randint(0, 55)
+        if num in vietlotte:
+            continue
+        vietlotte.append(num)
+    print(vietlotte)
+
+
+# Generate vietlotte number (not duplicated) 6 number
+play_with_vietlotte()
+# Add flake8 to check code
+# Add max3agr to write clean code
+def multiplication_table():
+    for i in range(1, 10):
+        for j in range(1, 10):
+            print(f'{i} * {j} = {i * j}')
+        print('---------------')
+
+
+# Print multiplication table from one to ten
+multiplication_table()
